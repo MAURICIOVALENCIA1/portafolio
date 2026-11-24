@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f7f5" />
+    <meta
+      name="description"
+      content="Portafolio de Harold Valencia, desarrollador de software en Cali, Colombia. Experiencia en React, Node.js, .NET, documentación y pruebas."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:title" content="Harold Valencia | Desarrollador de Software" />
+    <meta
+      property="og:description"
+      content="Proyectos, experiencia y formación de Harold Valencia, desarrollador de software en Cali, Colombia."
+    />
+    <meta property="og:image" content="/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Harold Valencia | Desarrollador de Software</title>
+    <script>
+      try {
+        const temaGuardado = localStorage.getItem("tema");
+        const prefiereOscuro = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (temaGuardado === "oscuro" || (!temaGuardado && prefiereOscuro)) {
+          document.documentElement.classList.add("dark");
+        }
+      } catch {
+        // Si el navegador bloquea el almacenamiento, se usa el tema predeterminado.
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
